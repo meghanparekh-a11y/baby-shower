@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower Invitation - Natasha</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lato:wght@300;400;500&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Lato', sans-serif;
+            background: #f9f7f4;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .invite-container {
+            max-width: 650px;
+            background: white;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .photo-header {
+            position: relative;
+            height: 380px;
+            overflow: hidden;
+        }
+        
+        .photo-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+            padding: 45px 40px 35px;
+            color: white;
+        }
+        
+        .photo-overlay h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6em;
+            margin: 0 0 8px 0;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .photo-overlay p {
+            font-size: 1.05em;
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .content {
+            padding: 50px 45px;
+        }
+        
+        .intro {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 45px;
+            font-weight: 300;
+        }
+        
+        .details-section {
+            border-top: 1px solid #f5e6e8;
+            border-bottom: 1px solid #f5e6e8;
+            padding: 35px 0;
+            margin: 40px 0;
+        }
+        
+        .detail-row {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px dotted #f5e6e8;
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            flex: 0 0 140px;
+            color: #c9879d;
+            font-size: 0.9em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .detail-value {
+            color: #4a4a4a;
+            font-size: 1.05em;
+            font-weight: 300;
+        }
+        
+        .section-divider {
+            width: 50px;
+            height: 1px;
+            background: #e8c9d4;
+            margin: 45px auto;
+        }
+        
+        .cocktail-section {
+            margin: 40px 0;
+        }
+        
+        .cocktail-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #c9879d;
+            margin: 0 0 25px 0;
+            font-size: 1.7em;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .cocktail-content {
+            background: #fef9fa;
+            padding: 30px;
+            border-left: 2px solid #e8c9d4;
+            font-size: 0.98em;
+            color: #5a5a5a;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        
+        .cocktail-content p {
+            margin: 0 0 12px 0;
+        }
+        
+        .cocktail-content p:last-child {
+            margin: 0;
+        }
+        
+        .activities-section {
+            text-align: center;
+            margin: 45px 0;
+        }
+        
+        .activities-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #c9879d;
+            margin: 0 0 25px 0;
+            font-size: 1.7em;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .activities-list {
+            color: #5a5a5a;
+            font-size: 1.02em;
+            line-height: 2;
+            font-weight: 300;
+        }
+        
+        .join-section {
+            background: #d4a5b5;
+            color: white;
+            padding: 40px;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+        
+        .join-section p {
+            margin: 0 0 20px 0;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 0.85em;
+            text-transform: uppercase;
+        }
+        
+        .join-section a {
+            display: inline-block;
+            background: white;
+            color: #c9879d;
+            padding: 16px 45px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1.05em;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+        
+        .join-section a:hover {
+            background: #f5f5f5;
+        }
+        
+        .join-hint {
+            margin: 15px 0 0 0;
+            font-size: 0.85em;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 35px;
+            background: #fef9fa;
+            color: #999;
+            font-size: 0.9em;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invite-container">
+        <div class="photo-header">
+            <img src="/mnt/user-data/uploads/WhatsApp_Image_2026-03-09_at_19_52_23.jpeg" alt="Natasha">
+            <div class="photo-overlay">
+                <h1>Baby Shower</h1>
+                <p>Celebrating Natasha</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p class="intro">
+                Please join us for an online celebration as we welcome the newest addition to our family. 
+                We'd love to have you there for an afternoon of connection, games, and joy.
+            </p>
+            
+            <div class="details-section">
+                <div class="detail-row">
+                    <div class="detail-label">Date</div>
+                    <div class="detail-value">Saturday, March 21st</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Time</div>
+                    <div class="detail-value">3:00 PM Pacific Time</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Location</div>
+                    <div class="detail-value">Virtual Celebration</div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="cocktail-section">
+                <h2>Signature Cocktail</h2>
+                <div class="cocktail-content">
+                    <p><em>Recipe to be shared</em></p>
+                    <p>We'll be mixing up a special drink to toast together. If cocktails aren't your thing, please join us with whatever you're enjoying—tea, juice, sparkling water, or your drink of choice.</p>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="activities-section">
+                <h2>What to Expect</h2>
+                <div class="activities-list">
+                    A celebratory toast<br>
+                    Games and laughter<br>
+                    Warm conversation
+                </div>
+            </div>
+            
+            <div class="join-section">
+                <p>Join the Celebration</p>
+                <a href="[INSERT YOUR LINK HERE]" target="_blank">Click Here to Join</a>
+                <p class="join-hint">Click at 3:00 PM on March 21st</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            We look forward to celebrating with you
+        </div>
+    </div>
+</body>
+</html>
